@@ -11,6 +11,8 @@ const SuperheroSchema = new mongoose.Schema({
     type: String,
     required: true
   }
+}, {
+  timestamp: true
 });
 
 module.exports = mongoose.model('Superhero', SuperheroSchema);

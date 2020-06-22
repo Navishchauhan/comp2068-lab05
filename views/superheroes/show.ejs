@@ -7,14 +7,14 @@
     </h1>
     <br>
     <small>
-      <%= (superhero.alias) %>
+      <%= (superhero.alias.updatedAt) %>
     </small>
   </header>
 
   <hr>
 
   <div class="content">
-    Registered: <%- superhero.createdAt.toLocaleString('en-CA') %>
+    Registered: <%- superhero.alias.toLocaleString('en-CA') %>
   </div>
 
   <p class="mt-5">

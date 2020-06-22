@@ -3,6 +3,9 @@ const Superhero = require('../models/superhero');
 
 exports.index = async (req, res) => {
   try {
+    res.render(`${viewPath}/index`, {
+      pageTitle: 'Registered Heroes'
+    });
     
   } catch (error) {
     req.flash('danger', 'There was an issue fetching the superheroes list');
@@ -52,7 +55,7 @@ exports.edit = async (req, res) => {
     const superhero = await Superhero.findById(req.params.id);
 
     res.render(`${viewPath}/edit`, {
-      pageTitle: '',
+      pageTitle:'',
       formData: superhero
     })
   } catch (error) {

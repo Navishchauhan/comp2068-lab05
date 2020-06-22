@@ -17,7 +17,7 @@
     </thead>
 
     <tbody>
-      <% for (let hero of superheroes) { %>
+      <% for(let hero of superheroes) { %>
         <tr>
           <td><%= hero.name %></td>
           <td><%= hero.alias %></td>
@@ -26,7 +26,7 @@
             <a href="/superheroes/<%= hero.id %>">
               <i class="fa fa-eye"></i>
             </a>
-
+            &nbsp;/&nbsp;
             <a href="/superheroes/<%= hero.id %>/edit">
               <i class="fa fa-edit"></i>
             </a>
